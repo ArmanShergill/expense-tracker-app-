@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <meta name="description" content="Track your expenses easily with a modern web app.">
+</head>
+<body>
+
+<section class="expense-tracker">
+
+    <h1>💰 Expense Tracker</h1>
+
+    <!-- FORM -->
+    <form id="expense-form">
+        <input type="text" id="desc" placeholder="Description" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+
+        <select id="category">
+            <option>Food</option>
+            <option>Transport</option>
+            <option>Shopping</option>
+        </select>
+
+        <button type="submit">Add Expense</button>
+    </form>
+
+    <!-- TOTAL -->
+    <h2>Total: $<span id="total">0</span></h2>
+
+    <!-- FILTER -->
+    <select id="filter-category">
+        <option value="All">All Categories</option>
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Shopping">Shopping</option>
+    </select>
+
+    <!-- LIST -->
+    <div id="expense-list"></div>
+
+    <!-- CATEGORY -->
+    <h3>Category Breakdown</h3>
+    <div id="category-breakdown"></div>
+
+    <!-- MONTHLY -->
+    <h3>Monthly Summary</h3>
+    <div id="monthly-summary"></div>
+
+</section>
+
+</body>
+</html>

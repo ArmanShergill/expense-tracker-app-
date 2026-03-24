@@ -1,0 +1,129 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body{
+background:linear-gradient(135deg, #0f172a, #1e293b);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+color:#333;
+}
+
+/* MAIN CONTAINER */
+.expense-tracker{
+background:#fff;
+padding:30px;
+border-radius:12px;
+width:90%;
+max-width:500px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* HEADINGS */
+h1{
+text-align:center;
+margin-bottom:20px;
+}
+
+h2{
+margin:20px 0;
+text-align:center;
+color:#0f172a;
+}
+
+h3{
+margin-top:25px;
+margin-bottom:10px;
+}
+
+/* FORM */
+form{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+form input,
+form select{
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+form button{
+background:#f2c94c;
+border:none;
+padding:12px;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+form button:hover{
+background:#e6b93e;
+}
+
+/* FILTER */
+#filter-category{
+margin:15px 0;
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+/* EXPENSE LIST */
+.expense-item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#f9f9f9;
+padding:12px;
+border-radius:8px;
+margin-bottom:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.05);
+}
+
+.expense-item p{
+font-size:14px;
+}
+
+.expense-item small{
+color:#666;
+}
+
+/* BUTTONS */
+.expense-item button{
+margin-left:5px;
+border:none;
+padding:6px 10px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.expense-item button:hover{
+opacity:0.8;
+}
+
+/* CATEGORY + MONTH BOX */
+.category-item{
+background:#f1f5f9;
+padding:10px;
+border-radius:6px;
+margin:6px 0;
+font-weight:500;
+}
+
+/* RESPONSIVE */
+@media(max-width:500px){
+.expense-tracker{
+padding:20px;
+}
+}
