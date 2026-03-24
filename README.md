@@ -19,7 +19,7 @@ A fully functional expense tracker web application built using JavaScript with l
 https://expense-tracker1446.netlify.app/
 
 ## 📸 Preview
-preview.jpeg 
+![Preview](preview.jpeg) 
 
 ## 🚀 How to Run
 1. Clone the repository
